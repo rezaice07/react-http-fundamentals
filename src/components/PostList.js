@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import { PostService } from '../utilities/Services';
 
 
 class PostList extends Component {
@@ -13,7 +14,10 @@ class PostList extends Component {
         }
     }
 
-    componentDidMount(){
+    componentDidMount= async ()=>{
+
+        await PostService().then(res=>console.log(res));
+        /*
         //axios is the promise based library
         axios.get('https://jsonplaceholder.typicode.com/posts')
         .then((response) => {
@@ -23,6 +27,8 @@ class PostList extends Component {
             console.log(err);
             this.setState({errorMessage:'Error Retrieving Data'})
         });
+
+        */
     }
     
     render() {

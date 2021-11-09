@@ -10,8 +10,8 @@ function App() {
 
       <p>Http: working with http</p>
       <p>Test Api Reference: https://jsonplaceholder.typicode.com/</p>
-      {/* <PostList></PostList> */}
-      <PostForm></PostForm>
+      <PostList></PostList>
+      {/* <PostForm></PostForm> */}
 
 
     </div>
